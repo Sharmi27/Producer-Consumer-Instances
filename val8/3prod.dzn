@@ -1,0 +1,10 @@
+start=0;
+end=41;
+maxQ=30;
+num_producers=3;
+num_consumers=3;
+n_sconsts=7;
+n_hconsts=3;
+sconsts=[|1,1,12|1,2,22|1,3,33|3,1,9|3,2,13|3,3,24|4,1,0|];
+hconsts=[|2,1,2|2,2,6|2,3,5|];
+qC=[1, 2, 9];
