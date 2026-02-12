@@ -23,3 +23,30 @@ These folders contain instances used to compare Algorithm 1 and Algorithm 3 perf
 - **Total**: 10 base instances + 100 variants (10 base × 10 orderings each)
 
 ## Instance Format
+Instances contain the following decision variables:
+### Variable: `start` correspond to start time
+### Variable: `end` correspond to end time
+### Variable: `maxQ` correspond to maximum quantity
+### Variable: `num_producers` correspond to number of producers
+### Variable: `num_consumers` correspond to number of consumers
+### Variable: `n_sconsts` correspond to number of soft constraints
+### Variable: `n_hconsts` correspond to number of hard constraints
+### Variable: `qC` correspond to consumer quantities
+### Variable: `sconsts/hconsts` correspond to the soft and hard constraints
+```
+sconsts=[|1,1,9|1,2,18|1,3,19|3,1,7|3,2,10|3,3,28|4,1,0|];
+hconsts=[|2,1,7|2,2,7|2,3,29|];
+```
+
+Each tuple `[x,y,z]` is separated by `|` and represents:
+- **First index (x)**: Entity type
+  - `1` = producer arrival time
+  - `2` = consumer quantity
+  - `3` = consumer start time
+  - `4` = safety margin
+- **Second index (y)**: Entity ID (which producer/consumer)
+  - For producers (i=1): y-th producer (e.g., y=2 means Producer 2)
+  - For consumers (i=2): y-th consumer (e.g., y=5 means Consumer 5)
+- **Third index (z)**: Quantity value for that entity
+
+**Example:** `[1,2,3]` → Producer 2 has arrival time 3 
