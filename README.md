@@ -41,7 +41,7 @@ hconsts=[|2,1,7|2,2,7|2,3,29|];
 Each tuple `[x,y,z]` is separated by `|` and represents:
 - **First index (x)**: Entity type
   - `1` = producer arrival time
-  - `2` = consumer quantity
+  - `2` = producer quantity
   - `3` = consumer start time
   - `4` = safety margin
 - **Second index (y)**: Entity ID (which producer/consumer)
