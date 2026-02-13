@@ -7,11 +7,11 @@ These folders contain instances of varying problem sizes used for scalability an
 
 - **Instance sizes**: 10 different sizes with producers/consumers ranging from 5 to 50 (increments of 5)
 - **Organization**: 
-  - `val1/`: 10 instances with 5 producers and 5 consumers
-  - `val2/`: 10 instances with 10 producers and 10 consumers
-  - `val3/`: 10 instances with 15 producers and 15 consumers
+  - `val1/`: 10 instances with producers and consumers varying from 5 to 50
+  - `val2/`: 10 instances with producers and consumers varying from 5 to 50
+  - `val3/`: 10 instances with producers and consumers varying from 5 to 50
   - ...
-  - `val10/`: 10 instances with 50 producers and 50 consumers
+  - `val10/`: 10 instances with producers and consumers varying from 5 to 50
 - **Total**: 100 instances (10 sizes × 10 instances per size)
 
 ### Constraint Ordering Variation Set: `size50folder/` and `varcon1/` through `varcon10/`
