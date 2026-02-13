@@ -5,7 +5,7 @@ This repository contains the benchmark instances used in: Gupta, S.D., Simonis, 
 
 These folders contain instances of varying problem sizes used for scalability analysis.
 
-- **Instance sizes**: 10 different sizes with producers/consumers ranging from 5 to 50 (increments of 5)
+- **Instance sizes**: 10 different sizes with producers/consumers ranging from 5 to 50 (increments of 5). 
 - **Organization**: 
   - `val1/`: 10 instances with producers and consumers varying from 5 to 50
   - `val2/`: 10 instances with producers and consumers varying from 5 to 50
